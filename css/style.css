@@ -1,4 +1,9 @@
 :root {
+  --color-bg-nav: rgba(255, 255, 255, 0.8);
+  --color-bg-nav-dark: #222;
+  --color-font-nav-light: #fafafa;
+  --color-font-nav-dark: #222;
+  --color-h1: #fafafa;
   --color-h2: #666;
   --color-h3: #666;
   --color-p: #666;
@@ -8,66 +13,93 @@
 }
 /* HEADER */
 header {
+  margin: 7rem 0;
   height: 100vh;
   width: 100%;
-  background: center / contain no-repeat
-    url(../asset/famille-hiver-neige-ambiance-311.jpg);
+  background: url(../asset/famille-hiver-neige-ambiance-311.jpg) no-repeat fixed
+    center center / cover;
+  background-size: cover;
 }
 header h1 {
   display: inline-block;
   width: 100%;
   position: absolute;
-  margin: 50vh auto;
+  margin: calc(50vh - 7rem) auto;
   text-align: center;
-  font-size: 8rem;
-  color: #fafafa;
+  font-size: 11rem;
+  font-weight: 650;
+  color: var(--color-h1);
 }
 /* NAV */
 header nav {
-  position: sticky;
+  position: fixed;
   top: 0;
+  z-index: 1;
+  width: 100%;
+  background-color: var(--color-bg-nav);
 }
 header nav ul {
   display: inline-flex;
   align-items: center;
-  max-width: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
-
+  width: 100%;
 }
 header nav ul li {
   display: inline-block;
 }
-
 header nav ul li a {
   display: inline-block;
-  text-transform: uppercase;
   padding: 2rem;
+  text-transform: uppercase;
+  font-size: 2rem;
   font-weight: 100;
 }
+header nav ul li:nth-child(3) a,
+header nav ul li:nth-child(4) a {
+  padding: 2rem 6rem;
+}
+header nav ul li:nth-child(5) a {
+  padding: 2rem 4rem;
+}
+
 header nav > ul li:first-child img {
   height: 4rem;
-  margin-right: 20vw;
+  width: 16rem;
+  margin: 1rem 20vw 1rem 1rem;
 }
 header nav > ul li:last-child a {
   padding: 0;
 }
-header nav > ul li:last-child img {
-  height: 4rem;
+header nav > ul li:last-child a img {
+  padding: 0 6rem;
 }
-/* Guide des stations */
+/* HEADER ANNIMATION*/
+
+header nav ul li a:hover,
+.clickDark {
+  background-color: var(--color-bg-nav-dark);
+  color: var(--color-font-nav-light);
+}
+header nav ul li:nth-child(6) a:hover,
+.clickLight {
+  background-color: var(--color-bg-nav-light);
+  color: var(--color-font-nav-dark);
+}
+
+/* MAIN */
 main section {
+  padding: 4rem;
   border-top: var(--color-grey) solid 0.2rem;
-  max-height: 50vh;
+  min-height: 50vh;
 }
 main section h2 {
   text-align: center;
-  padding: 4rem;
+  padding-bottom: 4rem;
   font-size: 6rem;
   color: var(--color-h2);
 }
 main section ul {
   display: flex;
-  max-width: 70%;
+  max-width: 120rem;
   margin: 0 auto;
 }
 main section ul li {
@@ -76,6 +108,8 @@ main section ul li {
 main section ul li figure img {
   display: block;
   width: 100%;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  transition: all 0.4s;
 }
 main section ul li figure figcaption h3 {
   text-align: center;
@@ -87,6 +121,11 @@ main section ul li figure figcaption p {
   font-size: 1rem;
   text-align: justify;
   color: var(--color-p);
+}
+
+/* ANNIMATION MAIN IMG*/
+main section ul li figure img:hover {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
 }
 
 /* FOOTER */
