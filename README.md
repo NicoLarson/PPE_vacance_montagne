@@ -35,7 +35,7 @@
 - [X] La base de données doit être appelée "vacances" et la table "offre".
 
 ```sql
-USE vacance;
+USE vacances;
 SHOW TABLES;
 +--------------------+
 | Tables_in_vacances |
