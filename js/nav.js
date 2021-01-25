@@ -11,9 +11,4 @@ document.addEventListener("DOMContentLoaded", () => {
       menuList[i].classList.add("clickDark");
     });
   }
-
-
-
-
-  
 });

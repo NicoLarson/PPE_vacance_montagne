@@ -21,8 +21,8 @@ try { // On se connecte à MySQL
             <figure>
                 <img src="' . $donnee['image'] . '" alt="offre">
                 <figcaption>
-                    <h3>'. $donnee['titre'].'</h3>
-                    <p>'.$donnee['contenu'].'
+                    <h3>' . $donnee['titre'] . '</h3>
+                    <p>' . $donnee['contenu'] . '
                     </p>
                 </figcaption>
             </figure>
