@@ -3,15 +3,21 @@
   --color-bg-nav-dark: #222;
   --color-font-nav-light: #fafafa;
   --color-font-nav-dark: #222;
+  --color-bg-header:#fafafa;
   --color-h1: #fafafa;
-  --color-h2: #666;
-  --color-h3: #666;
-  --color-p: #666;
+  --color-h2: #616F72;
+  --color-h3: #111;
+  --color-p: #111;
   --color-bg-section:#fafafa;
   --color-bg-section-ul:#fff;
   --color-grey: rgba(0, 0, 0, 0.1);
   --color-bg-footer: #222;
   --color-ft-footer: #fafafa;
+}
+
+/* Theme */
+body{
+  background-color: #fafafa;
 }
 /* HEADER */
 header {
@@ -126,12 +132,12 @@ main section ul li figure img {
 }
 main section ul li figure figcaption h3 {
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.6rem;
   padding: 1rem;
   color: var(--color-h3);
 }
 main section ul li figure figcaption p {
-  font-size: 1rem;
+  font-size: 1.4rem;
   text-align: justify;
   color: var(--color-p);
 }
