@@ -9,3 +9,17 @@
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+<body>
+    <header>
+        <h1>Vacance à la montagne</h1>
+        <nav>
+            <ul>
+                <li><img src="./asset/logo.png" alt="logo"></li>
+                <li><a href="#">Guide des stations</a></li>
+                <li><a href="#guide">Magazine</a></li>
+                <li><a href="#">Info live</a></li>
+                <li><a href="#reservation">Réservation</a></li>
+                <li><a href="#"><img src="./asset/loop.png" alt="recherche"></a></li>
+            </ul>
+        </nav>
+    </header>

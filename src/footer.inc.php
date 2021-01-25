@@ -10,3 +10,7 @@
     </ul>
     <p>&copy; Design by MIT <?php print date('Y') ?> </p>
 </footer>
+<script src="./js/nav.js"></script>
+</body>
+
+</html>
